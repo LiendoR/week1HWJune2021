@@ -5,23 +5,14 @@
     <title>Homework Week 1</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* div {
-            border-left: 12px solid black;
-        } */
-
-        img {
-                width: 99%;
-            }
-    </style>
+    <link href="styles.css"
 </head>
 
 <body>
-    <div style="display: flex;">
-        <!--<p style="text-align: center;">-->
+    <div style="display: flex; justify-content: space-between;">
+        <p style="text-align: center;">
          <!--flex-container --> 
-         <section style="width: 33%;">
+         <section style="display: flex; flex-direction: column; height: 200px; width: 33%;">
             <!-- flex-items -->
             <div style="text-align: center;font-family: Arial, Helvetica, sans-serif; flex: 1; font-size: 50px;text-decoration: underline;padding: 160px 10px 40px;">Follow Us On Social Media</div>
             <div style="text-align: center; flex: 1; font-size: 30px;font-family: Verdana, Geneva, Tahoma, sans-serif;padding: 2% 0;">Facebook</div>
@@ -31,10 +22,10 @@
                 <img src="./images/treeBranch.png" alt="Tree Branch">
             </div>  
         </section>
-        <!--flex-container -->
+        <!--flex-container --> 
        
         <!-- flex-container -->
-        <section style="width: 33%;border-left: 10px solid black;border-right: 10px solid black;">
+        <section style="display: flex; flex-direction: column; height: 200px; width: 33%";>
             <!-- flex-items -->
             <div style="flex: 1;padding: 10% 2%;">
                 <img src="./images/americanFlag.png" alt="American Flag">
@@ -49,7 +40,7 @@
             <div style="text-align: left; flex: 1; font-size: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;padding: 0 2%;">Marine Corps, Air Force, USA 01230</div>
         </section>
         <!-- flex-container -->
-        <section style="width: 33%;">
+        <section style="display: flex; flex-direction: column; height: 200px; width: 33%;">
             <!-- flex-items -->
             <div style="flex: 1;">
                 <img src="./images/VITlogo.png" alt="Vets In Tech Logo">
@@ -63,7 +54,17 @@
             </div>
         </section>
         
+    <style>
+            img {
+                width: 99%;
+            }
+    </style>
 
+    <style>
+        div {
+            border-left: 12px solid black;
+        }
+    </style>
     <!-- Audio-->
     <!--div>
         <audio style="display: none;" id="audio1" controls>
@@ -72,13 +73,15 @@
     </div>
     <br><br><br>
         <button onclick="run1()">play 1</button>
-    </div>
+    
      <script>
         function run1() {
         const audio = document.getElementById('audio1');
         audio.play()
     }
-    </script> --->
+    </script>
     </div>
+    </div>
+
 </body>
 </html>
